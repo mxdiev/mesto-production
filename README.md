@@ -1,6 +1,6 @@
 # Mesto, интерактивная галерея с API
 
-[Ссылка на опубликованный проект](https://mxdiev.github.io/mesto-ad/)
+[Ссылка на опубликованный проект](https://mxdiev.github.io/mesto-production/)
 
 ## Команды
 
