@@ -10,7 +10,7 @@
 
   <title>Mesto</title>
 	
-  <script type="module" crossorigin src="./assets/index-B3E_EuJP.js"></script>
+  <script type="module" crossorigin src="./assets/index-YCkcXmyS.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-CbtoTehz.css">
 </head>
 
@@ -53,15 +53,18 @@
           <form class="popup__form" name="edit-profile" novalidate>
             <label class="popup__label">
               <input
-                type="text"
-                name="name"
-                id="user-name"
-                class="popup__input popup__input_type_name"
-                placeholder="Имя"
-                required
-                minlength="2"
-                maxlength="40"
-              />
+			  type="text"
+			  name="name"
+			  id="user-name"
+			  class="popup__input popup__input_type_name"
+			  placeholder="Имя"
+			  required
+			  minlength="2"
+			  maxlength="40"
+			  pattern="^[\p{Script=Cyrillic}\p{Script=Latin}\s-]+$"
+			  title="Только буквы (латиница/кириллица), дефис и пробелы"
+			/>
+
               <span class="popup__error user-name-error"></span>
             </label>
             <label class="popup__label">
@@ -90,15 +93,18 @@
           <form class="popup__form" name="new-place" novalidate>
             <label class="popup__label">
               <input
-                type="text"
-                name="card-name"
-                id="place-name"
-                class="popup__input popup__input_type_card-name"
-                placeholder="Название"
-                required
-                minlength="2"
-                maxlength="30"
-              />
+			  type="text"
+			  name="card-name"
+			  id="place-name"
+			  class="popup__input popup__input_type_card-name"
+			  placeholder="Название"
+			  required
+			  minlength="2"
+			  maxlength="30"
+			  pattern="^[\p{Script=Cyrillic}\p{Script=Latin}\s-]+$"
+			  title="Только буквы (латиница/кириллица), дефис и пробелы"
+			/>
+
               <span class="popup__error place-name-error"></span>
             </label>
             <label class="popup__label">
